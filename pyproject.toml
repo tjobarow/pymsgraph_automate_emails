@@ -1,0 +1,40 @@
+[project]
+name = "office-365-email-automation-script"
+version = "1.0.0"
+description = "A Python-based tool for sending personalized HTML emails to recipients from a CSV file using Microsoft Graph API (Office 365)"
+readme = "README.md"
+license = {text = "MIT"}
+authors = [
+    {name = "Thomas Obarowski", email = "tjobarow@gmail.com"}
+]
+requires-python = ">=3.12"
+dependencies = [
+    "black==25.1.0",
+    "certifi==2025.8.3",
+    "charset-normalizer==3.4.3",
+    "click==8.2.1",
+    "idna==3.10",
+    "isort==6.0.1",
+    "Jinja2==3.1.6",
+    "loguru==0.7.3",
+    "MarkupSafe==3.0.2",
+    "mypy-extensions==1.1.0",
+    "packaging==25.0",
+    "pathspec==0.12.1",
+    "platformdirs==4.4.0",
+    "python-dotenv==1.1.1",
+    "requests==2.32.5",
+    "urllib3==2.5.0"
+]
+
+[project.scripts]
+o365-emailer = "send_emails:main"
+
+# Code formatting with Black
+[tool.black]
+line-length = 120
+target-version = ['py312']
+
+# Import sorting with isort
+[tool.isort]
+profile = "black"
