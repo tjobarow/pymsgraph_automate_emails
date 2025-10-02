@@ -1,7 +1,7 @@
-# Microsoft O365 Emailer
+# pymsgraph_automate_emails
 
 A Python-based tool for sending personalized HTML emails to recipients from a CSV file using Microsoft Graph API (Office
-365).
+365). Leverages ```concurrent.futures.ThreadPoolExecutor``` to drastically sending a large number of emails.
 
 ## Features
 
