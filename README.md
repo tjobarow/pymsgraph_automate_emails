@@ -13,10 +13,13 @@ A Python-based tool for sending personalized HTML emails to recipients from a CS
 - **Failure tracking**: Automatic CSV export of failed email attempts
 
 ## Prerequisites
-
-- Python 3.12.3
-- Microsoft Graph API credentials (Office 365)
+- Python >=3.12
+- Microsoft Graph API credentials (Entra ID Enterprise Application - see below)
 - Virtual environment (managed with `virtualenv`)
+
+### Microsoft Graph API Prerequisites
+- Enterprise application with OAuth credentials, and permission to use the [SendMail Graph API endpoint](https://learn.microsoft.com/en-us/graph/api/user-sendmail?view=graph-rest-1.0&tabs=http#permissions)
+- An existing user account to source the email from
 
 ## Dependencies
 
