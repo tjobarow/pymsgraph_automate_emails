@@ -199,5 +199,4 @@ generic_emailer/
 1. **Authentication errors**: Verify your Microsoft Graph API credentials in `.env`
 2. **Template rendering issues**: Ensure CSV column names exactly match template variables
 3. **Email delivery failures**: Check the generated failure CSV for specific error details
-4. **Permission denied**: Ensure your Azure app registration has the necessary Mail.Send permissions (see README.md at
-   src\packages\simple_o365_send_mail_python for more help)
+4. **Permission denied**: Ensure your Azure app registration has the necessary Mail.Send permissions
