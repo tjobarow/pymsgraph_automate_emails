@@ -12,11 +12,17 @@ A Python-based tool for sending personalized HTML emails to recipients from a CS
 - **Comprehensive logging**: File and console logging with configurable levels
 - **Failure tracking**: Automatic CSV export of failed email attempts
 
-## Requirements
+## Prerequisites
 
 - Python 3.12.3
 - Microsoft Graph API credentials (Office 365)
 - Virtual environment (managed with `virtualenv`)
+
+## Dependencies
+
+3rd party dependencies are listed in `requirements.txt`. 
+
+This package is also dependent on [pymsgraph-mail](https://github.com/tjobarow/pymsgraph_mail#), which I also developed. This package comes bundled into this repository, though.
 
 ## Installation
 
