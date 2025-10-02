@@ -34,7 +34,7 @@ from loguru import logger
 from src.extensions.jinja.jinja_environment_extended import (
     JinjaFileSystemEnvironmentExtended,
 )
-from src.packages.pymsgraph-mail.simple_o365_send_mail import (
+from src.packages.pymsgraph_mail.pymsgraph_mail import (
     BodyType,
     EmailImportance,
     SimpleSendMail,
