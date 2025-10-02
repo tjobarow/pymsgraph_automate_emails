@@ -139,6 +139,8 @@ python send_emails.py \
   --template_path html_templates/newsletter.html \
   --csv_path csv/subscribers.csv \
   --subject "Weekly Newsletter" \
+  --email "security@company.com" \
+  --name "Security Team"
   --dry-run \
   --log_level DEBUG
 ```
@@ -150,6 +152,8 @@ python send_emails.py \
   --template_path html_templates/alert.html \
   --csv_path csv/recipients.csv \
   --subject "System Maintenance Notice" \
+  --email "security@company.com" \
+  --name "Security Team"
   --env-file-name .env.production
 ```
 
